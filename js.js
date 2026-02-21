@@ -30,3 +30,4 @@ let humanChoice = prompt("type rock, paper or scissors");
 
 }
 
+getHumanChoice();
