@@ -44,49 +44,67 @@ function playRound(humanChoice, computerChoice){
 
 if(humanChoice === "rock" && computerChoice === "scissors"){
     humanScore++;
-    return "You win! Rock beats Scissors";
+    return "You win! Rock beats Scissors\nYour score is " + humanScore + " and the Computer's score is " + computerScore ;
+    
 }
 
 else if(humanChoice === "rock" && computerChoice === "paper"){
     computerScore++;
-return "You lose! Paper beats Rock";
+return "You lose! Paper beats Rock\nYour score is " + humanScore + " and the Computer's score is " + computerScore ;
 }
 
-else if(humanChoice === "rock" && computerChoice === "rock"){
-return "Its a tie."
-}
+
 
 else if(humanChoice === "paper" && computerChoice === "rock"){
     humanScore++;
-return "You win! Paper beats Rock";
+return "You win! Paper beats Rock\nYour score is " + humanScore + " and the Computer's score is " + computerScore ;
 }
 
 else if(humanChoice === "paper" && computerChoice === "scissors"){
     computerScore++;
-return "You lose! Scissors beats Paper";
+return "You lose! Scissors beats Paper\nYour score is " + humanScore + " and the Computer's score is " + computerScore ;
 }
 
-else if(humanChoice === "paper" && computerChoice === "paper"){
-return "Its a tie."
-}
+
 
 else if(humanChoice === "scissors" && computerChoice === "paper"){
     humanScore++;
-return "You win! Scissors beats Paper";
+return "You win! Scissors beats Paper\nYour score is " + humanScore + " and the Computer's score is " + computerScore ;
 }
 
 else if(humanChoice === "scissors" && computerChoice === "rock"){
     computerScore++;
-return "You lose! Rock beats Scissors";
+return "You lose! Rock beats Scissors\nYour score is " + humanScore + " and the Computer's score is " + computerScore ;
 }
 
-else if(humanChoice === "scissors" && computerChoice === "scissors"){
-return "Its a tie."
+else if(humanChoice === computerChoice ){
+return "Its a tie.\nYour score is " + humanScore + " and the Computer's score is " + computerScore ;
 }
+
 else {
     return "type a valid choice";
 }
 
+
+
 }
 
-console.log(playRound(getHumanChoice(), getComputerChoice()));
+
+
+
+
+function playGame(){
+
+console.log(playRound(getHumanChoice() , getComputerChoice()));
+console.log(playRound(getHumanChoice() , getComputerChoice()));
+console.log(playRound(getHumanChoice() , getComputerChoice()));
+console.log(playRound(getHumanChoice() , getComputerChoice()));
+console.log(playRound(getHumanChoice() , getComputerChoice()));
+
+
+
+    
+}
+
+
+playGame();
