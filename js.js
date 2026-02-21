@@ -11,4 +11,22 @@ function getComputerChoice(){
     }
 }
 
-console.log(getComputerChoice());
+function getHumanChoice(){
+let humanChoice = prompt("type rock, paper or scissors");
+
+    if(humanChoice.toLowerCase() === "rock"){
+        return "rock";
+    }
+    else if(humanChoice.toLowerCase() === "paper"){
+        return "paper";
+    }
+    else if(humanChoice.toLowerCase() === "scissors"){
+        return "scissors";
+    }
+    else{
+        return "type a valid choice";
+    }
+
+
+}
+
